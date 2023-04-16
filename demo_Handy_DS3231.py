@@ -7,6 +7,6 @@ onboardrtc=RTC()
 # sync external RTC with PICO RTC :
 # myrtc.datetime(onboardrtc.datetime())
 print(f"Today is {myrtc.weekday} the {myrtc.day}. of {myrtc.monthname} {myrtc.year}.")
-print(f"time        : {myrtc.hour}:{myrtc.minute}:{myrtc.second}")
+print(f"time        : {myrtc.hour:02d}:{myrtc.minute:02d}:{myrtc.second:02d}")
 print(f"temperature : {myrtc.temp} C")
 
