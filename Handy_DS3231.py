@@ -46,7 +46,7 @@ class Handy_DS3231:
                         buffer[4]&=0x30
                         buffer[4]|=dt%10
                     if wd!=None and wd<7: # calc. weekday add one !
-                        buffer[3]|=wd+1
+                        buffer[3]=wd+1
                     if hr!=None: # calc. hour
                         buffer[2]=(hr//10)<<4
                         buffer[2]&=0x30
