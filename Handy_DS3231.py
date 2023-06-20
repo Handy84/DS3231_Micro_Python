@@ -12,11 +12,10 @@ class Handy_DS3231:
             myrtc.datetime((2023, 4, 11, 1, 17, 18, 51, 0))
     """
 
-    __i2c_object: object
-    __buffer: tuple
     
     def __init__(self, i2c_object):
         self.__i2c_object = i2c_object
+        self.__buffer = tuple()
         self.datetime()
 
     @property
